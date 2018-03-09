@@ -13,10 +13,13 @@ var crysPlayerGame = {
 function gameRandomNumGen (min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
+console.log(gameRandomNumGen(19, 121)); 
 
-console.log(gameRandomNumGen(19, 120)); 
+function playerRandomNumGen (min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
-
+console.log(playerRandomNumGen(1, 13)); 
 
 
 
