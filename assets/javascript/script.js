@@ -23,11 +23,14 @@ function playerRandomNumGen (min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
+var gameNumber = gameRandomNumGen (); 
+    console.log(gameNumber);
+
 
 var crystalOneNumber = playerRandomNumGen();
     crysPlayerGame.crysOne.push(crystalOneNumber);
-    console.log(crysPlayerGame.crysOne);
-    console.log(crysPlayerGame.crysOne.length);
+    // console.log(crysPlayerGame.crysOne);
+    // console.log(crysPlayerGame.crysOne.length);
    
 
 
