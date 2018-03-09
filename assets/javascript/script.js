@@ -29,9 +29,19 @@ var gameNumber = gameRandomNumGen ();
 
 var crystalOneNumber = playerRandomNumGen();
     crysPlayerGame.crysOne.push(crystalOneNumber);
-    // console.log(crysPlayerGame.crysOne);
-    // console.log(crysPlayerGame.crysOne.length);
-   
+    console.log(crysPlayerGame.crysOne);
+    console.log(crysPlayerGame.crysOne.length);
+
+var crystalTwoNumber = playerRandomNumGen();
+    crysPlayerGame.crysTwo.push(crystalTwoNumber);
+    console.log(crysPlayerGame.crysTwo);
+    console.log(crysPlayerGame.crysTwo.length);
+
+
+var crystalThreeNumber = playerRandomNumGen();
+    crysPlayerGame.crysThree.push(crystalThreeNumber);
+    console.log(crysPlayerGame.crysThree);
+    console.log(crysPlayerGame.crysThree.length);
 
 
 
