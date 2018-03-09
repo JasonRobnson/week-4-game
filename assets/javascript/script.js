@@ -15,7 +15,7 @@ function gameRandomNumGen (min, max) {
     var max = 121;
     return Math.floor(Math.random() * (max - min)) + min;
 }
-console.log(gameRandomNumGen())
+
 
 function playerRandomNumGen (min, max) {
     var min = 1;
@@ -25,7 +25,9 @@ function playerRandomNumGen (min, max) {
 
 
 var crystalOneNumber = playerRandomNumGen();
-    console.log(crystalOneNumber);
+    crysPlayerGame.crysOne.push(crystalOneNumber);
+    console.log(crysPlayerGame.crysOne);
+    console.log(crysPlayerGame.crysOne.length);
    
 
 
