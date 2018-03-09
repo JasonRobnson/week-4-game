@@ -1,3 +1,45 @@
-.header{
-    /* background-color: bisque; */
+/* Colorschmes:
+blue
+Primary: #4fc3f7
+PrimaryL: #8bf6ff
+PirmaryD: #0093c4
+red
+Secondary: #f06292
+SecondaryL: #ff94c2
+SecondaryD: #ba2d65 */
+/* Googlefonts {
+   font-family: 'Bowlby One SC', cursive;
+font-family: 'Shrikhand', cursive;
+font-family: 'Nanum Pen Script', cursive;
+} */
+
+.h1font {
+    font-size: 40px;
+    font-family: 'Bowlby One SC', cursive;
+    margin: -10px;
+
+}
+.Dblue {
+    background-color: #0093c4;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.h2font {
+    font-size: 22px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.red {
+    background-color: #f06292;
+}
+.blue {
+    background-color: #4fc3f7;
+}
+.pink {
+    background-color: #ff94c2;
+}
+.headwrap {
+    background-color: #ff94c2;
+    height: 50px;
 }
