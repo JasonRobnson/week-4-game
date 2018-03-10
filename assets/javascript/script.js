@@ -23,14 +23,18 @@ function playerRandomNumGen (min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-var gameNumber = gameRandomNumGen (); 
+var gameNumber = gameRandomNumGen ();
+    $('#gameNum').html(gameNumber);
     console.log(gameNumber);
+
+        
 
 
 var crystalOneNumber = playerRandomNumGen();
     crysPlayerGame.crysOne.push(crystalOneNumber);
     console.log(crysPlayerGame.crysOne);
     console.log(crysPlayerGame.crysOne.length);
+// document.getElementById('gameNum').innerHTML = crystalOneNumber;
 
 
 $('.crystalone').click(function() {
