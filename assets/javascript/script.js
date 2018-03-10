@@ -32,16 +32,21 @@ var crystalOneNumber = playerRandomNumGen();
     console.log(crysPlayerGame.crysOne);
     console.log(crysPlayerGame.crysOne.length);
 
-var crystalTwoNumber = playerRandomNumGen();
-    crysPlayerGame.crysTwo.push(crystalTwoNumber);
-    console.log(crysPlayerGame.crysTwo);
-    console.log(crysPlayerGame.crysTwo.length);
+
+$('.crystalone').click(function() {
+    
+})
+
+// var crystalTwoNumber = playerRandomNumGen();
+//     crysPlayerGame.crysTwo.push(crystalTwoNumber);
+//     console.log(crysPlayerGame.crysTwo);
+//     console.log(crysPlayerGame.crysTwo.length);
 
 
-var crystalThreeNumber = playerRandomNumGen();
-    crysPlayerGame.crysThree.push(crystalThreeNumber);
-    console.log(crysPlayerGame.crysThree);
-    console.log(crysPlayerGame.crysThree.length);
+// var crystalThreeNumber = playerRandomNumGen();
+//     crysPlayerGame.crysThree.push(crystalThreeNumber);
+//     console.log(crysPlayerGame.crysThree);
+//     console.log(crysPlayerGame.crysThree.length);
 
 
 
