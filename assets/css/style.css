@@ -14,6 +14,9 @@ font-family: 'Nanum Pen Script', cursive;
 font-family: 'Quattrocento Sans', sans-serif;
 } */
 
+.bkgroundimage {
+    background-image: url(../images/purplerock.jpg)
+}
 p {
     font-family: 'Quattrocento Sans', sans-serif;
     font-size: 18px;
