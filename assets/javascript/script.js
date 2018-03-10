@@ -36,7 +36,7 @@ var crystalOneNumber = playerRandomNumGen();
 
    $('#crystalOne').on('click', function() {
     totalvalue = totalvalue + crystalOneNumber;
-
+    $('#yourNum').text(totalvalue);
     console.log(totalvalue);
     });
 
@@ -44,6 +44,7 @@ var crystalOneNumber = playerRandomNumGen();
 var crystalTwoNumber = playerRandomNumGen();
 $('#crystalTwo').on('click', function() {
     totalvalue = totalvalue + crystalTwoNumber;
+    $('#yourNum').text(totalvalue);
     console.log(totalvalue);
 });
 
@@ -52,7 +53,9 @@ $('#crystalTwo').on('click', function() {
 var crystalThreeNumber = playerRandomNumGen();
 $('#crystalThree').on('click', function() {
     totalvalue = totalvalue + crystalThreeNumber;
+    $('#yourNum').text(totalvalue);
     console.log(totalvalue);
+
 });
 
 
