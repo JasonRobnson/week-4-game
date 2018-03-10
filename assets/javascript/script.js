@@ -9,6 +9,9 @@ var crysPlayerGame = {
     crysThree: [],
 }
 
+var totalvalue = 0;
+
+
 //returns a random number between 19 and 120
 function gameRandomNumGen (min, max) {
     var min = 19;
@@ -29,28 +32,29 @@ var gameNumber = gameRandomNumGen ();
 
         
 
-
 var crystalOneNumber = playerRandomNumGen();
-    crysPlayerGame.crysOne.push(crystalOneNumber);
-    console.log(crysPlayerGame.crysOne);
-    console.log(crysPlayerGame.crysOne.length);
-// document.getElementById('gameNum').innerHTML = crystalOneNumber;
+
+   $('#crystalOne').on('click', function() {
+    totalvalue = totalvalue + crystalOneNumber;
+
+    console.log(totalvalue);
+    });
 
 
-$('.crystalone').click(function() {
-    
-})
-
-// var crystalTwoNumber = playerRandomNumGen();
-//     crysPlayerGame.crysTwo.push(crystalTwoNumber);
-//     console.log(crysPlayerGame.crysTwo);
-//     console.log(crysPlayerGame.crysTwo.length);
+var crystalTwoNumber = playerRandomNumGen();
+$('#crystalTwo').on('click', function() {
+    totalvalue = totalvalue + crystalTwoNumber;
+    console.log(totalvalue);
+});
 
 
-// var crystalThreeNumber = playerRandomNumGen();
-//     crysPlayerGame.crysThree.push(crystalThreeNumber);
-//     console.log(crysPlayerGame.crysThree);
-//     console.log(crysPlayerGame.crysThree.length);
+
+var crystalThreeNumber = playerRandomNumGen();
+$('#crystalThree').on('click', function() {
+    totalvalue = totalvalue + crystalThreeNumber;
+    console.log(totalvalue);
+});
+
 
 
 
