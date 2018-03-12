@@ -34,6 +34,25 @@ function playerRandomNumGen (min, max) {
 var gameNumber = gameRandomNumGen ();
     $('#gameNum').html(gameNumber);
     console.log(gameNumber);
+
+// the adding function to the score
+
+$('#crystalOne').on('click', function() {
+    totalValue = totalValue + crystalOneNumber;
+    $('$yourScore').text(totalValue);
+    if(totalValue == gameRandomNumber){
+        alert('You won!');
+        winTally++
+        $('#yourScore').text(winTally);
+        reset();
+    } else if (totalValue > gameRandomNumber){
+        alert('You lose!')
+        lossTally++
+        $('.losing').text(lossTally);
+        reset();
+    }
+    console.log(winTally);
+});
     
 
         
