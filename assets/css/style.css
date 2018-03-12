@@ -56,3 +56,16 @@ p {
     background-color: #ff94c2;
     height: 50px;
 }
+
+#gameNum {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 40px;
+    
+    text-shadow: 2px 2px 20px #0093c4;
+}
+
+#yourNum {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 20px #0093c4;
+}

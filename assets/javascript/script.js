@@ -72,19 +72,37 @@ $('#crystalFour').on('click', function() {
 
 });
 
-function score ();
-    $('#crystalOne').on('click', function() {
-  if (totalvalue > gameNumber) {
-        lossTally = lossTally + 1;
-        console.log(lossTally);
-        alert('You Lose!');
-        writeScore = lossTally; }
-    else if (totalvalue == gameNumber) {
-    winTally = winTally + 1;
-    alert('You Win!');
-    writeScore = winTally;
-    }
-});
 
-score ();
+// function score () {
+//     $('#crystalOne', '#crystalTwo', '#crystalThree', '#crystalFour').on('click', function()
+//    { if (totalvalue > gameNumber) {
+//         lossTally = lossTally + 1;
+//         console.log(lossTally);
+//         alert('You Lose!');
+//         writeScore = lossTally;
+//     }
+// } 
+// else if ( totalvalue == gameNumber) {
+//     winTally = winTally + 1;
+//     alert('You Win!');
+//     writeScore = winTally;
+// }
+// });
+
+
+// function score ();
+//     $('#crystalOne').on('click', function {
+//   if (totalvalue > gameNumber) {
+//         lossTally = lossTally + 1;
+//         console.log(lossTally);
+//         alert('You Lose!');
+//         writeScore = lossTally; }
+//     else if (totalvalue == gameNumber) {
+//     winTally = winTally + 1;
+//     alert('You Win!');
+//     writeScore = winTally;
+//     }
+// });
+
+// score ()
 
