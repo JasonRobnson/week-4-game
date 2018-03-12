@@ -58,6 +58,14 @@ $('#crystalThree').on('click', function() {
 
 });
 
+const crystalFourNumber = playerRandomNumGen();
+$('#crystalFour').on('click', function() {
+    totalvalue = totalvalue + crystalFourNumber;
+    $('#yourNum').text(totalvalue);
+    console.log(totalvalue);
+
+});
+
 
 
 
