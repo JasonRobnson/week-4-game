@@ -9,7 +9,7 @@ var crysPlayerGame = {
     crysThree: [],
 }
 
-var totalvalue = 0;
+let totalvalue = 0;
 
 
 //returns a random number between 19 and 120
@@ -32,7 +32,7 @@ var gameNumber = gameRandomNumGen ();
 
         
 
-var crystalOneNumber = playerRandomNumGen();
+const crystalOneNumber = playerRandomNumGen();
 
    $('#crystalOne').on('click', function() {
     totalvalue = totalvalue + crystalOneNumber;
@@ -41,7 +41,7 @@ var crystalOneNumber = playerRandomNumGen();
     });
 
 
-var crystalTwoNumber = playerRandomNumGen();
+const crystalTwoNumber = playerRandomNumGen();
 $('#crystalTwo').on('click', function() {
     totalvalue = totalvalue + crystalTwoNumber;
     $('#yourNum').text(totalvalue);
@@ -50,7 +50,7 @@ $('#crystalTwo').on('click', function() {
 
 
 
-var crystalThreeNumber = playerRandomNumGen();
+const crystalThreeNumber = playerRandomNumGen();
 $('#crystalThree').on('click', function() {
     totalvalue = totalvalue + crystalThreeNumber;
     $('#yourNum').text(totalvalue);
