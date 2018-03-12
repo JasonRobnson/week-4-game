@@ -77,6 +77,11 @@ p {
     font-size: 40px;
     text-shadow: 2px 2px 20px #0093c4;
 }
+#yourLoss {
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 20px #0093c4;
+}
 .instructions {
     background-color: #ff94c2;
     opacity: 0.99   ;
