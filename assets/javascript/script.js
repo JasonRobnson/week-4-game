@@ -16,7 +16,22 @@ let winTally = 0;
 let lossTally = 0;
 
 let writeScore = document.getElementById('yourScore');
+//reset for new game
 
+function reset(){
+    var min = 19;
+    var max = 121;
+    gameNumber = Math.floor(Math.random() * (max-min)) + min;
+    $('#gameNum').html(gameNumber);
+    let crystalOneNumber = playerRandomNumGen();
+    let crystalTwoNumber = playerRandomNumGen();
+    let crystalThreeNumber = playerRandomNumGen();
+    let crystalFourNumber = playerRandomNumGen();
+    totalvalue = 0;
+    $('#yourNum').text(totalvalue);  
+
+    
+}
 //returns a random number between 19 and 120
 function gameRandomNumGen (min, max) {
     var min = 19;
@@ -37,22 +52,21 @@ var gameNumber = gameRandomNumGen ();
 
 // the adding function to the score
 
-$('#crystalOne').on('click', function() {
-    totalValue = totalValue + crystalOneNumber;
-    $('$yourScore').text(totalValue);
-    if(totalValue == gameRandomNumber){
+function score(){
+   
+    if(totalvalue == gameNumber){
         alert('You won!');
-        winTally++
+        winTally++;
         $('#yourScore').text(winTally);
         reset();
-    } else if (totalValue > gameRandomNumber){
+    } else if (totalvalue > gameNumber){
         alert('You lose!')
-        lossTally++
-        $('.losing').text(lossTally);
+        lossTally++;
+        $('#yourLoss').text(lossTally);
         reset();
     }
     console.log(winTally);
-});
+};
     
 
         
@@ -63,6 +77,7 @@ const crystalOneNumber = playerRandomNumGen();
     totalvalue = totalvalue + crystalOneNumber;
     $('#yourNum').text(totalvalue);
     console.log(totalvalue);
+    score();
     });
 
 
@@ -71,6 +86,7 @@ $('#crystalTwo').on('click', function() {
     totalvalue = totalvalue + crystalTwoNumber;
     $('#yourNum').text(totalvalue);
     console.log(totalvalue);
+    score();
 });
 
 
@@ -80,6 +96,7 @@ $('#crystalThree').on('click', function() {
     totalvalue = totalvalue + crystalThreeNumber;
     $('#yourNum').text(totalvalue);
     console.log(totalvalue);
+    score();
 
 });
 
@@ -88,9 +105,12 @@ $('#crystalFour').on('click', function() {
     totalvalue = totalvalue + crystalFourNumber;
     $('#yourNum').text(totalvalue);
     console.log(totalvalue);
+    score();
 
 });
 
+
+reset();
 
 // function score () {
 //     $('#crystalOne', '#crystalTwo', '#crystalThree', '#crystalFour').on('click', function()
