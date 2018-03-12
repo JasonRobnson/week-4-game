@@ -11,6 +11,11 @@ var crysPlayerGame = {
 
 let totalvalue = 0;
 
+let winTally = 0;
+
+let lossTally = 0;
+
+let writeScore = document.getElementById('yourScore');
 
 //returns a random number between 19 and 120
 function gameRandomNumGen (min, max) {
@@ -18,7 +23,7 @@ function gameRandomNumGen (min, max) {
     var max = 121;
     return Math.floor(Math.random() * (max - min)) + min;
 }
-
+// rand number generator used by crystals
 
 function playerRandomNumGen (min, max) {
     var min = 1;
@@ -29,9 +34,10 @@ function playerRandomNumGen (min, max) {
 var gameNumber = gameRandomNumGen ();
     $('#gameNum').html(gameNumber);
     console.log(gameNumber);
+    
 
         
-
+// linking the randomNumberGenerator to Crystal 1-4
 const crystalOneNumber = playerRandomNumGen();
 
    $('#crystalOne').on('click', function() {
@@ -66,9 +72,19 @@ $('#crystalFour').on('click', function() {
 
 });
 
+function score ();
+    $('#crystalOne').on('click', function() {
+  if (totalvalue > gameNumber) {
+        lossTally = lossTally + 1;
+        console.log(lossTally);
+        alert('You Lose!');
+        writeScore = lossTally; }
+    else if (totalvalue == gameNumber) {
+    winTally = winTally + 1;
+    alert('You Win!');
+    writeScore = winTally;
+    }
+});
 
-
-
-
-
+score ();
 
